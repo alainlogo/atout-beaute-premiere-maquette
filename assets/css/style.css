@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+img{
+    width: 100%;
+}
+
+.le__main{
+    position: relative;
+}
+/* HEADER */
+.header__header{
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+
+}
+.header__text{
+    text-align: right;
+    padding-top: 290px;
+    padding-left: 50px;
+    width: 35%;
+}
+.header__text h1{
+    font-size: 130px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+}
+.header__text span{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.header__img{
+    margin-left: 57px;
+    display: flex;
+
+}
+.header__img .img{
+    height: 700px;
+    width: 470px;
+    transition: 0.3s;
+}
+.header__img .img1{
+    background-image: url(../img/shop\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+.header__img .img2{
+    background-image: url(../img/tele.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 400px;
+    z-index: 0;
+}
+.header__img .img2:hover{
+    z-index: 2;
+}
+.header__btn{
+    padding: 20px;
+    border: none;
+    background-color: #FBE8A6;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-weight: 700;
+
+}
+.header__btn a{
+    font-size: 17px;
+    font-weight: 700;
+    background-color: none;
+}
+.btn1{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.btn2{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.img__overlay{
+    position: absolute;
+    padding: 22px;
+    top: -100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: .5s;
+}
+.img__overlay h3{
+    margin-bottom: 10px;
+}
+.header__img .img:hover .img__overlay{
+    top: 0;
+}
+
+/* PRODUITS */
+.section__produit{
+    position: relative;
+    height: 850px;
+}
+.section__produit .bloc1{
+    position: absolute;
+    width: 70%;
+    margin-top: -100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+}
+.bloc__haut{
+    display: flex;
+    margin: 10px;
+}
+.bloc__haut h2{
+    text-transform: uppercase;
+}
+.haut{
+    width: 50%;
+    height: 300px;
+    padding: 35px;
+    margin:5px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.haut img{
+    position: absolute;
+}
+.haut1 img{
+    bottom: 0;
+    left: 0;
+}
+.haut1{
+    text-align: right;
+    background-color: #FBE8A6;
+}
+.haut2 img{
+    top: 20px;
+    right: 20px;
+    width: 70%;
+}
+.haut2{
+    background-color: #D4EAF9;
+}
+.haut2 h2{
+    margin-bottom: 20px;
+}
+
+.bloc__bas{
+    display: flex;
+    margin: 10px;
+}
+.bloc__bas h3{
+    text-transform: uppercase;
+}
+.bloc__bas p{
+    font-size: 20px;
+}
+.bloc__bas .bas{
+    width: 33%;
+    height: 600px;
+}
+.bas{
+    margin: 5px;
+}
+
+.bas1{
+    background-image: url(../img/bas1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bas2{
+    background-image: url(../img/sac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bas3{
+    background-image: url(../img/madeinfrance.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text{
+    width: 100%;
+    background-color: hsla(0, 100%, 30%, 0.3);
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+}
+.text1{
+    margin-top: 60%;
+}
+.text2{
+    margin-top: 20%;
+}
+.text3{
+    margin-top: 77%;
+}
+
+/* NEWSLETTER */
+.section__newsletter{
+    height: 400px;
+    background-image: url(../img/Mockup\ Catalogue\ Ludo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.news{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 100px;
+
+}
+.news__text{
+    width: 50%;
+    margin: 50px;
+    text-align: center
+}
+.news__text h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px;
+}
+.news__form{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+.news__form input{
+    border: none;
+    padding: 25px;
+}
+.news__form input::placeholder{
+    color: black;
+    font-size: 20px;
+}
+.news__form a{
+    padding: 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+/* REASSURANCE */
+.rea{
+    margin:3px 200px ;
+    display: flex;
+    justify-content: space-around;
+
+}
+.bloc__rea{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 1px 3px 12px 0px rgba(0,0,0,0.2); */
+    border-radius: 5px;
+}
+.bloc__rea i{
+    font-size: 30px;
+    margin-right: 10px;
+}
